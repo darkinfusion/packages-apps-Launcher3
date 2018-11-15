@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Google Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="home_screen"
+        android:title="@string/home_category_title"
+        android:summary="@string/home_category_summary"
+        android:icon="@drawable/homescreen"
+        android:layout="@layout/settings_layout">
+    <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:targetPackage="com.android.launcher3"
+            android:targetClass="com.android.launcher3.Homescreen" />
+    </Preference>
+
+    <Preference
+        android:key="icons"
+        android:title="@string/icons_category_title"
+        android:summary="@string/icons_category_summary"
+        android:icon="@drawable/icons"
+        android:layout="@layout/settings_layout">
+        <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:targetPackage="com.android.launcher3"
+            android:targetClass="com.android.launcher3.Icons" />
+    </Preference>
+
+    <Preference
+        android:key="app_drawer"
+        android:title="@string/app_drawer_category_title"
+        android:summary="@string/app_drawer_category_summary"
+        android:icon="@drawable/appdrawer"
+        android:layout="@layout/settings_layout">
+    <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:targetPackage="com.android.launcher3"
+            android:targetClass="com.android.launcher3.AppDrawer" />
+    </Preference>
+
+    <Preference
+        android:key="gestures"
+        android:title="@string/gestures_category_title"
+        android:summary="@string/gestures_category_summary"
+        android:icon="@drawable/gestures"
+        android:layout="@layout/settings_layout">
+    <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:targetPackage="com.android.launcher3"
+            android:targetClass="com.android.launcher3.Gestures" />
+    </Preference>
+
+</PreferenceScreen>
